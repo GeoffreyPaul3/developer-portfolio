@@ -13,7 +13,7 @@ export function Skills() {
   
 
   return (
-    <section id="skills" className="py-24 relative">
+    <section id="skills" className="py-24 relative container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export function Skills() {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold mb-8"
         >
-          <span className="text-purple-400">#</span>skills
+          <span className="text-purple-400">#</span>Skills
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.entries(skills).map(([category, items], index) => (

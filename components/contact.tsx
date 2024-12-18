@@ -7,7 +7,7 @@ import { Textarea } from '@/components/ui/textarea'
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 relative">
+    <section id="contact" className="py-24 relative container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +15,7 @@ export function Contact() {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold mb-8"
         >
-          <span className="text-purple-400">#</span>contact
+          <span className="text-purple-400">#</span>Contact
         </motion.h2>
         <div className="max-w-md mx-auto">
           <form className="space-y-4">

@@ -41,7 +41,7 @@ export function Projects() {
     : projects.filter(p => p.tech.includes(filter))
 
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-24 container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -49,13 +49,13 @@ export function Projects() {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold mb-8"
         >
-          <span className="text-purple-400">#</span>projects
+          <span className="text-purple-400">#</span>Projects
         </motion.h2>
         <div className="flex flex-wrap gap-2 mb-8">
           {allTechs.map((tech) => (
             <Button
               key={tech}
-              variant={filter === tech ? 'default' : 'outline'}
+              variant={filter === tech ? 'default' : 'secondary'}
               onClick={() => setFilter(tech)}
               size="sm"
             >
@@ -80,18 +80,20 @@ export function Projects() {
                     <Image 
                       src={project.preview} 
                       alt={project.title} 
-                      className="w-full h-full object-cover transition-transform group-hover:scale-110" 
+                      className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                      width={600}
+                      height={600}
                     />
                   </div>
                   <p className="text-zinc-400">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((t) => (
-                      <span key={t} className="text-xs bg-zinc-800 px-2 py-1 rounded">
+                      <span key={t} className="text-xs bg-zinc-400 px-2 py-1 rounded">
                         {t}
                       </span>
                     ))}
                   </div>
-                  <Button variant="secondary" size="sm" asChild>
+                  <Button size="sm" asChild>
                     <Link href={project.live} target="_blank" rel="noopener noreferrer">
                       Live <ExternalLink className="ml-2 h-4 w-4" />
                     </Link>

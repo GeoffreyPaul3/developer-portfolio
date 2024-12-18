@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { GithubIcon, Menu, X } from 'lucide-react'
+import { GithubIcon, Linkedin, Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export function Nav() {
@@ -62,7 +62,14 @@ export function Nav() {
               transition={{ delay: 0.5 }}
             >
               <Button variant="ghost" size="icon">
-                <GithubIcon className="h-5 w-5" />
+                <Link href="https://github.com/GeoffreyPaul3">
+                <GithubIcon className="h-8 w-8" />
+                </Link>
+              </Button>
+              <Button variant="ghost" size="icon">
+                <Link href="https://linkedin.com/in/geoffrey-paul">
+                <Linkedin className="h-8 w-8" />
+                </Link>
               </Button>
             </motion.div>
           </div>

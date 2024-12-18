@@ -6,7 +6,7 @@ import { ArrowRight, Code, Palette, Globe, Mail } from 'lucide-react'
 import { motion, useAnimation } from 'framer-motion'
 import Link from 'next/link'
 
-const roles = ['Web Designer', 'Front-end Developer', 'UI Enthusiast']
+const roles = ['Full-Stack Developer', 'Web Designer', 'AI Enthusiast']
 
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0)
@@ -29,17 +29,17 @@ export function Hero() {
   }, [roleIndex, controls])
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="absolute inset-0 bg-grid-zinc-400/[0.05] bg-[size:50px_50px]" />
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="space-y-6"
+            className="space-y-6 text-center lg:text-left"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               Hi, I&apos;m a{' '}
               <motion.span
                 key={roleIndex}
@@ -49,23 +49,22 @@ export function Hero() {
                 {roles[roleIndex]}
               </motion.span>
             </h1>
-            <p className="text-xl text-zinc-400 max-w-2xl">
+            <p className="text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto lg:mx-0">
               I craft responsive websites using modern technologies
               that bring creativity to life and deliver exceptional user experiences.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button className="group text-lg" size="lg" asChild>
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+              <Button className="group text-lg" size="lg">
                 <Link href="#projects">
-                 View Projects
+                   View Projects
                 </Link>
-               
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg" asChild>
-                <Link href="mailto:geofreypaul40@gmail.com">
+              <Button variant="secondary" size="lg" className="group text-lg">
+                <Link href="mail to:geofreypaul40@gmail.com">
                  Contact Me
-                 <Mail className="w-5 h-5" />
                 </Link>
+                <Mail className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform"/>
               </Button>
             </div>
           </motion.div>
@@ -73,10 +72,10 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative hidden lg:block"
+            className="relative hidden md:block"
           >
             <div className="absolute inset-0 bg-purple-500/10 blur-3xl rounded-full" />
-            <div className="relative aspect-square">
+            <div className="relative aspect-square max-w-sm mx-auto">
               <div className="absolute inset-0 bg-zinc-900 rounded-3xl overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-zinc-900" />
                 <motion.div
@@ -112,10 +111,10 @@ export function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center"
       >
         <div className="px-4 py-2 rounded-full border border-zinc-700 bg-zinc-800/50 backdrop-blur-sm">
-          <p className="text-sm text-zinc-400">Open to new opportunities and <span className="text-purple-400 font-semibold">exciting projects</span></p>
+          <p className="text-sm text-zinc-400">Open to new opportunities <span className="text-purple-400 font-semibold"> while building innovative solutions.</span></p>
         </div>
       </motion.div>
       <div className="absolute bottom-4 left-4 flex space-x-4">
@@ -132,4 +131,3 @@ export function Hero() {
     </section>
   )
 }
-
