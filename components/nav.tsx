@@ -37,7 +37,7 @@ export function Nav() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Portfolio
+              Geoffrey
             </motion.span>
           </Link>
           <div className="hidden md:flex items-center space-x-4">

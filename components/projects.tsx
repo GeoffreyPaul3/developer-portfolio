@@ -14,21 +14,21 @@ const projects = [
     description: 'Premier Job Listing Platform.',
     tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'TailwindCSS', 'PostgreSQL'],
     live: 'https://www.dreamemploy.com',
-    preview: '/placeholder.svg?height=400&width=600',
+    preview: '/assets/project3.png',
   },
   {
     title: 'T Connect',
     description: 'Gift Card Marketplace.',
     tech: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Redis', 'Prisma'],
     live: 'https://www.tconnect.store',
-    preview: '/placeholder.svg?height=400&width=600',
+    preview: '/assets/project1.png',
   },
   {
     title: 'Trickal Holdings',
     description: 'Official Website For Trickal Holdings.',
     tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     live: 'https://www.trickalholdings.com',
-    preview: '/placeholder.svg?height=400&width=600',
+    preview: '/assets/project2.png',
   },
 ]
 

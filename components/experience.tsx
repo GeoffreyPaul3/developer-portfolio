@@ -4,22 +4,22 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    title: 'Senior Frontend Developer',
-    company: 'Tech Innovators Inc.',
-    period: '2021 - Present',
-    description: 'Led the frontend development of multiple high-traffic web applications, improving performance and user experience.',
+    title: 'Software Engineering Developer',
+    company: 'Trickal Holdings.',
+    period: 'Nov 2024 - Present',
+    description: 'I developed Tconnect, a gift card platform that streamlines purchasing and redeeming gift cards. I also built the official Trickal Holdings website, focusing on a modern design and user experience. This project strengthened my skills in Next.js, React, and payment integration.',
   },
   {
     title: 'Full Stack Developer',
-    company: 'Digital Solutions Ltd.',
-    period: '2018 - 2021',
-    description: 'Developed and maintained full-stack applications using React, Node.js, and MongoDB.',
+    company: 'Dream Employ',
+    period: 'May 2023 - Dec 2024',
+    description: 'Led the development and implementation of Dream Employ, a dynamic job board web application tailored to the Malawi job market. Shortened the job clearance procedure, guaranteeing that listings fulfilled quality requirements and making money with little fees.',
   },
   {
-    title: 'Junior Web Developer',
-    company: 'WebCraft Agency',
-    period: '2016 - 2018',
-    description: 'Assisted in the development of responsive websites and implemented designs using HTML, CSS, and JavaScript.',
+    title: 'Frontend Engineer Intern',
+    company: 'Frontend Simplified',
+    period: 'Jan 2023 - Apr 2023',
+    description: 'I transformed a static application into an interactive user interface using animations, transitions, and carousels. Processed API requests with Axios, and utilized Git for virtual collaboration.',
   },
 ]
 
