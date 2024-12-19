@@ -12,14 +12,14 @@ const projects = [
   {
     title: 'Dream Employ',
     description: 'Premier Job Listing Platform.',
-    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'TailwindCSS', 'PostgreSQL'],
+    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'TailwindCSS', 'PostgreSQL', 'Blob'],
     live: 'https://www.dreamemploy.com',
     preview: '/assets/project3.png',
   },
   {
     title: 'T Connect',
     description: 'Gift Card Marketplace.',
-    tech: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Redis', 'Prisma'],
+    tech: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Redis', 'Prisma', 'Paychangu'],
     live: 'https://www.tconnect.store',
     preview: '/assets/project1.png',
   },
@@ -73,7 +73,7 @@ export function Projects() {
             >
               <Card className="bg-zinc-900/50 border-zinc-800 overflow-hidden group">
                 <CardHeader>
-                  <CardTitle>{project.title}</CardTitle>
+                  <CardTitle className="text-white">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="aspect-video bg-zinc-800 rounded-md overflow-hidden">
