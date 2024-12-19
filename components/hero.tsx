@@ -6,7 +6,7 @@ import { ArrowRight, Code, Palette, Globe, Mail } from 'lucide-react'
 import { motion, useAnimation } from 'framer-motion'
 import Link from 'next/link'
 
-const roles = ['Full-Stack Developer', 'Web Designer', 'AI Enthusiast']
+const roles = ['a Full-Stack Developer', 'a Web Designer', 'an AI Enthusiast']
 
 export function Hero() {
   const [roleIndex, setRoleIndex] = useState(0)
@@ -40,7 +40,7 @@ export function Hero() {
             className="space-y-6 text-center lg:text-left"
           >
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              Hi, I&apos;m a{' '}
+              Hi, I&apos;m {' '}
               <motion.span
                 key={roleIndex}
                 animate={controls}
