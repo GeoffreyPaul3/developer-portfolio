@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Dream Employ',
     description: 'Premier Job Listing Platform.',
-    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'TailwindCSS', 'PostgreSQL', 'Blob'],
+    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'TailwindCSS', 'PostgreSQL', 'Prisma', 'Blob'],
     live: 'https://www.dreamemploy.com',
     preview: '/assets/project3.png',
   },
