@@ -61,7 +61,7 @@ export function Hero() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="secondary" size="lg" className="group text-lg">
-                <Link href="mail to:geofreypaul40@gmail.com">
+                <Link href="mailto:geofreypaul40@gmail.com">
                  Contact Me
                 </Link>
                 <Mail className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform"/>
